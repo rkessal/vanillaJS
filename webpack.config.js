@@ -4,7 +4,7 @@ const dirSrc = path.join(__dirname, "src")
 const dirPublic = path.join(__dirname, "public")
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: path.join(dirSrc, "index.js"),
   output: {
     "path": dirPublic,
