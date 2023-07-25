@@ -11,6 +11,7 @@ class App {
 
     this.page = this.pages.get(this.template)
     this.page.create()
+    this.page.addEventListeners()
   }
 }
 

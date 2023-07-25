@@ -2,14 +2,12 @@
   "name": "random",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "build": "webpack watch",
+    "dev": "webpack watch",
+    "build": "webpack build",
     "server": "nodemon app.js",
-    "dev": "webpack serve --open",
     "lint": "eslint *.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "node app.js && npm run build"
   },
   "keywords": [],
   "author": "",
