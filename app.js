@@ -8,6 +8,7 @@ const port = 3000;
 app.set("view engine", "pug");
 app.set("views", "views")
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'views')))
 routes(app)
 
 app.listen(port, () => {
