@@ -1,9 +1,13 @@
-function homeHandler(req, res) {
-  res.render("pages/home")
+const { client } = require("./prismic/config/prismicConfig")
+
+async function homeHandler(req, res) {
+  const { data } = await client.getSingle("home")
+  res.render("pages/home", {data})
 }
 
-function aboutHandler(req, res) {
-  res.render("pages/about")
+async function aboutHandler(req, res) {
+  const { data } = await client.getSingle("about")
+  res.render("pages/about", {data})
 }
 
 module.exports = {
